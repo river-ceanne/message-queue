@@ -7,7 +7,13 @@ A repository for a Java application that uses AWS SQS.
 
 - To send:
 
+        ./gradlew run --args='send hello'
+        
+        // ./gradlew run --args='send ['message you want to send]'
+
 - To receive:
+       
+        ./gradlew run --args='receive'
 
 ### API
 
