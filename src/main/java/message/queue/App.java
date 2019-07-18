@@ -36,16 +36,12 @@ public class App {
                 .getMessages();
         for (final Message message : messages) {
             System.out.println("Message");
-            System.out.println("  MessageId:     "
-                    + message.getMessageId());
-
             System.out.println("  Body:          "
                     + message.getBody());
 
 
             deleteMessage(message.getReceiptHandle());
         }
-        System.out.println();
 
     }
 
