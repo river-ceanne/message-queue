@@ -56,13 +56,15 @@ public class App {
 
     public static void main(String[] args) {
 
-        if(args[0] == "send"){
-            System.out.println("Sending message....");
-            sendMessage(args[1]);
-        }else if(args[0] == "receive"){
-            receiveMessages();
+        switch (args[0]){
+            case "send":
+                System.out.println("Sending message....");
+                sendMessage(args[1]);
+                break;
+            case "receive":
+                receiveMessages();
+                break;
         }
-
 
     }
 }
